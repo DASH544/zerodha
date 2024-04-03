@@ -2,7 +2,7 @@
 @tailwind utilities;
 @tailwind components;
 .btn-one:hover .line {
-  transform-origin: center;
+transform-origin: center;
   transition: 1s;
 }
 .btn-one:hover .top {
@@ -14,6 +14,6 @@
 .btn-one:hover .middle {
   opacity: 0;
 }
-.btn-one:hover:is(.top, .bottom) {
+.btn-one:hover :is(.top,.bottom) {
   y: 45;
 }
