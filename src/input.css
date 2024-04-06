@@ -1,10 +1,7 @@
 @tailwind base;
 @tailwind utilities;
 @tailwind components;
-.btn-one:hover .line {
-transform-origin: center;
-  transition: 1s;
-}
+
 .btn-one:hover .top {
   rotate: 45deg;
 }

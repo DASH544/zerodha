@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="style/style.css">
     <title>Document</title>
   </head>
-  <body class="min-h-screen bg-gray-500 ">
-    <section class="py-4 max-w-5xl mx-auto ps-6 pe-6 ">
+  <body class="min-h-screen ">
+    <section class="py-4 max-w-5xl mx-auto ps-6 pe-6 shadow-sm">
       <div class="relative">
 
         <nav class="flex items-center justify-between">
@@ -15,18 +15,18 @@
             <img class="w-1/3" src="img/logo.svg" alt="Zerodha">
            </div>
            <div class="">
-                <button class="btn-one absolute z-30 top-[-6px] right-2">
+                <button id="menu-btn" class="pt-1 btn-one absolute z-30 top-[-6px] right-2 ">
                     <svg class="" viewBox="0 0 100 100" width="30">
-                        <rect class="top line" width="80" height="10" x="10" y="25"></rect>
-                        <rect class="middle line" width="80" height="10" x="10" y="45"></rect>
-                        <rect class="bottom line" width="80" height="10" x="10" y="65"></rect>
+                        <rect class="top line origin-center duration-1000" width="80" height="10" x="10" y="25"></rect>
+                        <rect class="middle line  duration-1000" width="80" height="10" x="10" y="45"></rect>
+                        <rect class="bottom line  origin-center duration-1000" width="80" height="10" x="10" y="65"></rect>
                     </svg>
                 </button>
            </div>
           </nav>
-           <section class="p-2 flex flex-col gap-10 ps-8 mobile-menu-open min-h-[568px] list-none absolute bg-white top-0 pt-8 w-full ">
-              <div class="flex min-w-full gap-x-32 ">
-                <div class="flex flex-col gap-4">
+           <section id="mobile-section-open" class="p-2  hidden flex-col gap-8  mobile-menu-open min-h-[568px] list-none absolute bg-white top-0 pt-8 w-full  ">
+              <div class="flex min-w-full ps-8 ">
+                <div class="flex flex-col w-2/4 gap-4">
                   <li>Signup</li>
                   <li>Products</li>
                   <li>Support</li>
@@ -35,10 +35,10 @@
                   <li>About</li>
                   <li>Pricing</li>
                 </div>
-                <hr>
               </div>
-              <div class="flex min-w-full gap-x-32 ">
-                <div class="">
+              <hr class="w-full">
+              <div class="flex min-w-full ps-8">
+                <div class="w-2/4">
                   <div class="mb-3">
                     <a class="w-full " href=""><img class="w-8 inline-block" src="img/kite-logo.svg" alt="">
                     <span class="ml-1">Kite</span></a>
@@ -67,15 +67,16 @@
                   </div>
                 </div>
               </div>
-              <div class="footer flex w-full ">
-                <div class="flex flex-col gap-2 w-2/3">
-                  <h4>Utilities</h4>
+              <hr class="w-full">
+              <div class="footer flex w-full ps-8 text-gray-600 ">
+                <div class="flex flex-col gap-2 w-2/4 ">
+                  <h4 class="font-semibold text-black">Utilities</h4>
                   <li>Brokerage Calculator</li>
                   <li>Margin Calculator</li>
                   <li>Holiday Calender</li>
                 </div>
                 <div class="flex flex-col gap-2 ">
-                  <h4>Updates</h4>
+                  <h4 class="font-semibold text-black">Updates</h4>
                   <li>Z-Connect Blog</li>
                   <li>Pulse News</li>
                   <li>Circulars/Bulletin</li>
@@ -85,5 +86,18 @@
            </section>
       </div>
     </section>
+    <main class="max-w-5xl m-auto mt-12">
+      <section>
+        <div>
+          <img src="img/landing.png" alt="landing-page-img">
+        </div>
+        <div class="text-center">
+          <h1 class="text-6xl">Invest in everything</h1>
+          <p class="text-xl">Online platform to invest in stocks, derivatives, mutual funds, and more</p>
+          <button class="text-white">Signup now</button>
+        </div>
+      </section>
+    </main>
+    <script src="js/script.js" defer></script>
   </body>
 </html>
